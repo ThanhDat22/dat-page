@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/accordion.tsx","./src/components/background.tsx","./src/components/dropdown.tsx","./src/components/navbar.tsx","./src/data/courses.ts","./src/data/projects.ts","./src/pages/about.tsx","./src/pages/education.tsx","./src/pages/home.tsx","./src/pages/projects.tsx"],"version":"5.8.3"}
