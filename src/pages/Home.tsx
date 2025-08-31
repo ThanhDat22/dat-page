@@ -5,7 +5,7 @@ export default function Home() {
     <section className="relative pt-24 min-h-[70vh] overflow-hidden">
       <Background />
       <div className="relative z-10 mx-auto max-w-6xl px-5 grid md:grid-cols-[240px_1fr] items-center gap-10">
-        <img src="/public/images/dat.JPG" className="w-40 h-40 rounded-full object-cover ring-2 ring-amber-400/40" />
+        <img src="/images/dat.JPG" className="w-40 h-40 rounded-full object-cover ring-2 ring-amber-400/40" />
 
         <div>
           <h1 className="text-4xl font-bold">
