@@ -1,4 +1,12 @@
-export const projects = [
+export type Project = {
+  name: string;
+  desc: string;
+  tags: string[];
+  repo?: string;
+  demo?: string;
+};
+
+export const projects: Project[] = [
   {
     name: "Loan Prediction (ML)",
     tags: ["Python","pandas","scikit-learn"],
@@ -15,6 +23,6 @@ export const projects = [
     name: "Personal Portfolio (Web)",
     tags: ["HTML", "CSS", "JavaScript"],
     desc: "A responsive personal portfolio website to showcase my projects and skills.",
-    repo: "#", demo: "#"
+    repo: "https://github.com/ThanhDat22/dat-page", demo: "https://dat-page.netlify.app/"
   }
 ];
