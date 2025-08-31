@@ -1,16 +1,17 @@
 import Accordion from "../components/Accordion";
 import { courses, termKey } from "../data/courses";
 
-const byTermDesc = (a: typeof courses[number], b: typeof courses[number]) =>
-  termKey(b.term) - termKey(a.term);
-
 export default function Education() {
-  const umslCourses = courses.filter(c => c.school === "UMSL").sort(byTermDesc);
-  const sccCourses  = courses.filter(c => c.school === "SCC").sort(byTermDesc);
+  const umslCourses = courses.filter(c => c.school === "UMSL").sort((a, b) => termKey(b.term) - termKey(a.term));
+  const sccCourses  = courses.filter(c => c.school === "SCC").sort((a, b) => termKey(b.term) - termKey(a.term));
 
   return (
     <main className="pt-24 mx-auto max-w-6xl px-5">
-      <h2 className="text-3xl font-semibold mb-6">University of Missouri - St. Louis</h2>
+      <h2 className="text-3xl font-semibold mb-6 flex items-center gap-3">
+        <span className="inline-flex items-center bg-white/95 rounded px-2 py-1 ring-1 ring-neutral-700/10">
+          <img src="/images/umsl_logo.png" alt="UMSL" className="h-8 w-auto" /></span>
+        University of Missouri - St. Louis
+      </h2>
       <section className="bg-neutral-800/40 rounded-md">
         {umslCourses.map((c, i) => (
           <div key={i} className="px-4">
@@ -31,7 +32,10 @@ export default function Education() {
         ))}
       </section>
       
-      <h2 className="text-3xl font-semibold mb-6">Saint Charles Community College</h2>
+      <h2 className="text-3xl font-semibold mt-10 mb-6 flex items-center gap-3">
+        <img src="/images/scc_logo.png" alt="SCC" className="h-8 w-auto" />
+        Saint Charles Community College
+      </h2>
       <section className="bg-neutral-800/40 rounded-md">
         {sccCourses.map((c, i) => (
           <div key={i} className="px-4">

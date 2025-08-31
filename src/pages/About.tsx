@@ -1,4 +1,26 @@
+import { useRef, useState } from "react"
+
 export default function About() {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+
+  const toggleAudio = async () => {
+    const el = audioRef.current;
+    if (!el) return;
+    try {
+      if (el.paused) {
+        el.currentTime = 0;          // restart each click (optional)
+        await el.play();
+        setPlaying(true);
+      } else {
+        el.pause();
+        setPlaying(false);
+      }
+    } catch (e) {
+      console.error("Audio playback failed:", e);
+    }
+  };
+
   return (
     <main className="pt-24 mx-auto max-w-6xl px-5">
       <header className="grid md:grid-cols-[260px_1fr] gap-10 items-start">
@@ -8,6 +30,17 @@ export default function About() {
         <div>
           <h2 className="text-3xl font-semibold">Thanh Dat Nguyen</h2>
           <p className="text-neutral-300">Email: dat.nt@aol.com | St. Charles, MO</p>
+
+          {/* short bio */}
+          <p className="mt-3 text-neutral-400 max-w-xl leading-relaxed">
+            I am a Computer Science student at the University of Missouri–St. Louis, 
+            passionate about data science, software engineering, and cybersecurity. 
+            With a strong foundation in programming and problem-solving, I enjoy 
+            building practical projects that combine technical skills with creativity. 
+            Outside of coding, I’m an artist and gamer, blending analytical thinking 
+            with imagination in both my academic and personal work.
+          </p>
+
           <div className="mt-4 flex gap-3">
             <button 
               onClick={() => window.print()} 
@@ -79,6 +112,35 @@ export default function About() {
           
         </div>
       </section>
+      {/* ---- Pronunciation footer (END OF PAGE) ---- */}
+      <section className="mt-16 mb-10 flex items-center justify-center gap-3">
+        {/* Hidden audio element */}
+        <audio
+          ref={audioRef}
+          src="/audio/dat-name.m4a"
+          preload="none"
+          onEnded={() => setPlaying(false)}
+        />
+
+        <span className="text-xs sm:text-sm text-neutral-400">
+          How to pronounce my name
+          {/* Optional phonetic hint: */}
+          <span className="ml-2 text-neutral-500">(“Tahn Dat Nwin”)</span>
+        </span>
+
+        <button
+          onClick={toggleAudio}
+          aria-label={playing ? "Pause pronunciation" : "Play pronunciation"}
+          className="btn"
+        >
+          {playing ? "⏸ Pause" : "▶ Play"}
+        </button>
+
+      </section>
     </main>
+
+  
+    
+
   );
 }

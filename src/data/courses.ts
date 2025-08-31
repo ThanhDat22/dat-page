@@ -127,7 +127,7 @@ export const courses: Course[] = [
   {
   school: "UMSL",
   term: "Fall 2024",
-  title: "Video Game Design and Development",
+  title: "Video Game Design and Development (CmpSci 3410)",
   summary: [
     "Project-based course building a complete game in teams",
     "Unity engine (C#): world/level design, UI/UX, character design, engine scripting",
@@ -135,15 +135,64 @@ export const courses: Course[] = [
   ],
   links: [{ label: "Course Description", href: "https://bulletin.umsl.edu/coursesofinstruction/cmpsci/" }]
   },
+  {
+    school: "UMSL",
+    term: "Fall 2023",
+    title: "Design and Analysis of Algorithms (CmpSci 3130)",
+    summary: [
+      "Building strong problem-solving skills for real-world computing problems",
+      "Examining the fundamental algorithm and design principles",
+      "Developing fluency with the analysis of algorithms efficiency",
+      "Understanding the basic data structures and their roles in algorithm design"
+    ],
+    links: [{ label: "Course Description", href: "https://bulletin.umsl.edu/coursesofinstruction/cmpsci/" }]
+  },
 
   // Example SCC item (add your real SCC courses here)
   {
-    school: "SCC",
-    term: "Spring 2023",
-    title: "Computer Science I",
-    summary: ["Intro programming", "Data types, control flow, functions"],
-    links: [{ label: "Syllabus", href: "#" }]
-  }
+  "school": "SCC",
+  "term": "Fall 2022",
+  "title": "Introduction to Data Structures with C++ (cpt281)",
+  "summary": [
+    "Covers fundamental concepts, theories, and algorithms in data structures",
+    "Teaches advanced C++ programming techniques",
+    "Emphasizes Object-Oriented Design (OOD) and Object-Oriented Analysis (OOA)",
+    "Serves as a core undergraduate course for Computer Science and IT-related majors"
+  ],
+  "links": [
+    { "label": "Course Description", "href": "https://catalog.stchas.edu/" }
+  ]
+}, 
+
+{
+  "school": "SCC",
+  "term": "Spring 2022",
+  "title": "Programming in C++ (cpt182)",
+  "summary": [
+    "Introduces the fundamental skills of programming in C++ (cpt182)",
+    "Covers object-oriented programming (OOP) and object-oriented analysis (OOA)",
+    "Serves as a critical programming course for Computer Science, IT, or Business Technology majors",
+    "Builds a solid programming foundation for advanced CS/IT courses"
+  ],
+  "links": [
+    { "label": "Course Description", "href": "https://catalog.stchas.edu/" }
+  ]
+},
+
+{
+  "school": "SCC",
+  "term": "Fall 2021",
+  "title": "Java Programming (cpt189)",
+  "summary": [
+    "Covers fundamentals of the Java programming language",
+    "Emphasizes Object-Oriented Design (OOD) and Object-Oriented Analysis (OOA)",
+    "Provides students with the opportunity to build a strong foundation in Java development"
+  ],
+  "links": [
+    { "label": "Course Description", "href": "https://catalog.stchas.edu/" }
+  ]
+}
+
 ];
 
 // keep otherCourses export 

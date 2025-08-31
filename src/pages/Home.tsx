@@ -1,9 +1,9 @@
-import Background from "../components/Background";
+import BackgroundSwitcher from "../components/BackgroundSwithcer";
 
 export default function Home() {
   return (
-    <section className="relative pt-24 min-h-[70vh] overflow-hidden">
-      <Background />
+    <section className="relative pt-24 min-h-screen overflow-hidden flex flex-col">
+      <BackgroundSwitcher />
       <div className="relative z-10 mx-auto max-w-6xl px-5 grid md:grid-cols-[240px_1fr] items-center gap-10">
         <img src="/images/dat.JPG" className="w-40 h-40 rounded-full object-cover ring-2 ring-amber-400/40" />
 
@@ -21,7 +21,12 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center pb-8 opacity-70">⌄</div>
+      <div className="flex justify-center pb-8 opacity-70"></div>
+      <div className="mt-auto z-10 flex justify-center pb-6">
+        <span className="opacity-60 text-xs text-neutral-400">
+          © 2025 Thanh Dat Nguyen.
+        </span>
+      </div>
     </section>
   );
 }
