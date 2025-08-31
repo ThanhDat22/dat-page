@@ -1,10 +1,9 @@
 export default function About() {
-  const base = import.meta.env.BASE_URL;
   return (
     <main className="pt-24 mx-auto max-w-6xl px-5">
       <header className="grid md:grid-cols-[260px_1fr] gap-10 items-start">
         <div>
-          <img src={`${base}/public/images/dat.jpg`} className="w-52 h-52 rounded-full object-cover ring-2 ring-amber-400/40" />
+          <img src="/images/dat.JPG" alt="Dat" className="w-52 h-52 rounded-full object-cover ring-2 ring-amber-400/40" />
         </div>
         <div>
           <h2 className="text-3xl font-semibold">Thanh Dat Nguyen</h2>

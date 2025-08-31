@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import Dropdown from "./Dropdown";
 
 export default function Navbar() {
   const { pathname } = useLocation();
@@ -12,7 +11,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-neutral-900/70 backdrop-blur border-b border-neutral-800">
       <div className="mx-auto max-w-6xl px-5 h-14 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/public/images/logo.jpg" alt="Dat" className="h-6 w-6" />
+          <img src="/images/logo.jpg" alt="Dat" className="h-6 w-6" />
         </Link>
         <div className="flex items-center gap-6 text-sm">
           <Link className={itemClass("/")} to="/">Home</Link>
