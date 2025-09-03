@@ -13,7 +13,7 @@ export default function Dropdown({
   }, []);
   return (
     <div className="relative" ref={ref}>
-      <button onClick={() => setOpen(v => !v)} className="hover:text-amber-400">
+      <button onClick={() => setOpen(v => !v)} className="hover:text-amber-800">
         {label}
       </button>
       {open && (
