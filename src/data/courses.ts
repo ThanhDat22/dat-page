@@ -24,6 +24,20 @@ export const termKey = (t: string) => {
 export const courses: Course[] = [
   {
     school: "UMSL",
+    term: "Spring 2026",
+    title: "Machine Learning (CmpSci 5340)",
+    summary: [
+      "Foundations of machine learning including the learning problem, feasibility of learning, and training vs testing",
+      "Supervised learning algorithms: linear classification (Perceptron), linear regression, and logistic regression",
+      "Optimization methods for learning models including gradient descent and stochastic gradient descent",
+      "Statistical learning theory concepts: generalization, VC dimension, sample complexity, and bias–variance tradeoff",
+      "Model improvement techniques including regularization (Ridge, Lasso), validation, cross-validation, and model selection",
+      "Advanced topics such as support vector machines, neural networks, reinforcement learning, and unsupervised learning"
+    ],
+    links: [{ label: "Course Description", href: "https://bulletin.umsl.edu/coursesofinstruction/cmpsci/" }]
+  },
+  {
+    school: "UMSL",
     term: "Fall 2025",
     title: "Information Security (CmpSci 4782)",
     summary: [

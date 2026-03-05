@@ -61,8 +61,8 @@ export default function About() {
         <h3 className="text-amber-400 font-semibold tracking-wide">SUMMARY</h3>
         <p className="mt-2 text-neutral-300">
           <ul>
-            <li>BS CS @ UMSL (Expected Dec 2025)</li>
-            <li>Interested in Data Science / Software Engineering / Cybersecurity...</li>
+            <li>M.S. CS @ UMSL (Expected Dec 2028)</li>
+            <li>Interested in Data Science / Machine Learning / Software Engineering / Cybersecurity...</li>
           </ul>
         </p>
       </section>
@@ -71,8 +71,9 @@ export default function About() {
       <section className="mt-8">
         <h3 className="text-amber-400 font-semibold tracking-wide">EDUCATION</h3>
         <ul className="mt-2 space-y-1">
-          <li>B.S. Computer Science (Expected Dec 2025), University of Missouri-St. Louis, USA</li>
-          <li>A.S. Computer Science, 2022, St. Charles Community College, USA</li>
+          <li>M.S. Computer Science, (Expected Dec 2028), University of Missouri-St. Louis, USA</li>
+          <li>B.S. Computer Science, 2025, University of Missouri-St. Louis, USA</li>
+          <li>A.S. Computer Science, 2022, Saint Charles Community College, USA</li>
           <li>M.A. Linguistic and Applied Linguistics, 2011, Central China Normal University, China</li>
           <li>B.A. Chinese Language and Literature, 2009, University of Social Science and Humanities, Vietnam</li>
         </ul>

@@ -14,7 +14,9 @@ export default function Home() {
             <span className="text-amber-400"> N</span>guyen
           </h1>
           <p className="mt-2 text-neutral-300">
-            B.S. of Computer Science (Expected Dec 2025)
+            M.S. of Computer Science (Expected Dec 2028)
+            <br />
+            B.S. of Computer Science (December 2025)
           </p>
           <p className="mt-4 max-w-xl text-neutral-300">
             University of Missouri - St. Louis<br/>
